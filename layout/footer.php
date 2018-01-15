@@ -18,10 +18,10 @@
                      * *******************************************************************************************
                      */
 				
-                    // destinataire est votre adresse mail. Pour envoyer à plusieurs à la fois, séparez-les par une virgule
+                    // destinataire est votre adresse mail. Pour envoyer a plusieurs a la fois, separez-les par une virgule
                     $destinataire = 'pierre.lefebvre.5@free.fr,pilou.lefebure@gmail.com';
                     
-                    // Action du formulaire (si votre page a des paramètres dans l'URL)
+                    // Action du formulaire (si votre page a des parametres dans l'URL)
                     // si cette page est index.php?page=contact alors mettez index.php?page=contact
                     // sinon, laissez vide
                     $form_action = '';
@@ -40,7 +40,7 @@
                      */
                     
                     /*
-                     * cette fonction sert à nettoyer et enregistrer un texte
+                     * cette fonction sert a nettoyer et enregistrer un texte
                      */
                     function Rec($text)
                     {
@@ -55,7 +55,7 @@
                     ;
                     
                     /*
-                     * Cette fonction sert à vérifier la syntaxe d'un email
+                     * Cette fonction sert a verifier la syntaxe d'un email
                      */
                     function IsEmail($email)
                     {
@@ -63,19 +63,19 @@
                         return (($value === 0) || ($value === false)) ? false : true;
                     }
                     
-                    // formulaire envoyé, on récupère tous les champs.
+                    // formulaire envoye, on recupere tous les champs.
                     $nom = (isset($_POST['nom'])) ? Rec($_POST['nom']) : '';
                     $email = (isset($_POST['email'])) ? Rec($_POST['email']) : '';
                     $objet = (isset($_POST['objet'])) ? Rec($_POST['objet']) : '';
                     $message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
                     
-                    // On va vérifier les variables et l'email ...
-                    $email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+                    // On va verifier les variables et l'email ...
+                    $email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si errone, soit il vaut l'email entre
                     $err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si besoin
                     
                     if (isset($_POST['envoi'])) {
                         if (($nom != '') && ($email != '') && ($objet != '') && ($message != '')) {
-                            // les 4 variables sont remplies, on génère puis envoie le mail
+                            // les 4 variables sont remplies, on genere puis envoie le mail
                             $headers  = 'MIME-Version: 1.0' . "\r\n";
                             $headers .= 'From:'.$nom.' <'.$email.'>' . "\r\n" .
                                 'Reply-To:'.$email. "\r\n" .
@@ -84,7 +84,7 @@
                                 'Content-Transfer-Encoding: 7bit'." \r\n" .
                                 'X-Mailer:PHP/'.phpversion();
                             
-                            // Remplacement de certains caractères spéciaux
+                            // Remplacement de certains caracteres speciaux
                             $message = str_replace("&#039;", "'", $message);
                             $message = str_replace("&#8217;", "'", $message);
                             $message = str_replace("&quot;", '"', $message);
@@ -159,8 +159,12 @@
 	</div>
 	<div id="copyright" class="container">
 		<ul class="menu">
-			<li>&copy; Untitled. All rights reserved.</li>
-			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>Mme SLOSSE _ N° SIRET : 000 000 000 00000 _ N° ADELI : 00 0000000</li>
+			<li>Mme MARCQ _ N° SIRET : 833 628 175 00014 _ N° ADELI : 62 9309766</li>
+		</ul>
+		<ul class="menu">
+			<li>Developped by <a href="https://github.com/plefeb/">plefeb</a> _ Based on a <a href="http://html5up.net">HTML5 UP</a> Theme</li>
+			<li>v0.1</li>
 		</ul>
 	</div>
 </div>
