@@ -24,11 +24,10 @@
 				<!-- Content -->
 				<article id="content">
 					<header>
-						<h2>No Sidebar</h2>
-						<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit
-							dolor neque semper.</p>
+						<h2>Nos prestations</h2>
+						<p>L'argent ne fait pas le bonheur, mais il y contribue.</p>
 					</header>
-					<a href="#" class="image featured"><img src="images/pic06.jpg"
+					<a href="#" class="image featured"><img src="../images/pic06.jpg"
 						alt="" /></a>
 					<p>Ut sed tortor luctus, gravida nibh eget, volutpat odio. Proin
 						rhoncus, sapien mollis luctus hendrerit, orci dui viverra metus,
@@ -59,7 +58,7 @@
 				<div class="row features">
 					<section class="4u 12u(narrower) feature">
 						<div class="image-wrapper first">
-							<a href="#" class="image featured"><img src="images/pic03.jpg"
+							<a href="#" class="image featured"><img src="../images/pic03.jpg"
 								alt="" /></a>
 						</div>
 						<header>
@@ -73,7 +72,7 @@
 					</section>
 					<section class="4u 12u(narrower) feature">
 						<div class="image-wrapper">
-							<a href="#" class="image featured"><img src="images/pic04.jpg"
+							<a href="#" class="image featured"><img src="../images/pic04.jpg"
 								alt="" /></a>
 						</div>
 						<header>
@@ -87,7 +86,7 @@
 					</section>
 					<section class="4u 12u(narrower) feature">
 						<div class="image-wrapper">
-							<a href="#" class="image featured"><img src="images/pic05.jpg"
+							<a href="#" class="image featured"><img src="../images/pic05.jpg"
 								alt="" /></a>
 						</div>
 						<header>

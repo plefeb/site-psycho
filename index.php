@@ -21,8 +21,8 @@
 				<header>
 					<h2>
 						<strong>Bienvenue</strong> <br />
-						<br /> cabinet de psychologie clinique <br />
-						<br /> <strong>Marie SLOSSE</strong> et <strong>Camille MARCQ</strong>
+						<br />Cabinet de Psychologie Clinique<br />
+						<br /><strong>Marie SLOSSE</strong> et <strong>Camille MARCQ</strong>
 					</h2>
 				</header>
 				<p>
